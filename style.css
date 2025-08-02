@@ -1,0 +1,95 @@
+.hero {
+  background-color: #eaf4fc;
+  padding: 2rem 3rem;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.text-box {
+  max-width: 500px;
+}
+
+.highlight {
+  color: #f26363;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.subheading {
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.text-box p {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.browse-btn {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #2f5ef3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.browse-btn:hover {
+  background-color: #1e44c2;
+}
+
+.hero-img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Optional: Rotate animation for 5s on load */
+.rotate {
+  animation: rotate 5s linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.navbar{
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2f5ef3;
+  padding: 1rem 2rem;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+.logo{
+    font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+.nav-links a:hover {
+  color: #fce38a;
+}
