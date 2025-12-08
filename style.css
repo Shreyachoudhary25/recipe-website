@@ -1,0 +1,262 @@
+/* =========================
+   Food Lovers — style.css
+   FINAL CLEAN VERSION
+   ========================= */
+
+/* ---- Base ---- */
+html, body, .slider-container {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  background-color: #fffdf7;
+  color: #333;
+}
+
+/* ---- Navbar ---- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #e63946, #ff7a18);
+  padding: 1rem 2.5rem;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.9rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.logo span {
+  color: #fff3b0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-size: 1rem;
+  transition: all 0.25s ease;
+}
+
+.nav-links a:hover {
+  color: #fff3b0;
+  transform: translateY(-2px);
+}
+
+.signup-btn {
+  background-color: #1d3557;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-left: 1.2rem;
+}
+
+.signup-btn:hover {
+  background-color: #d94a4a;
+}
+
+/* ---- Hero content layout (used by slides) ---- */
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.text-box {
+  max-width: 650px;
+}
+
+.highlight {
+  color: #fff;
+  font-weight: 800;
+  font-size: 2.8rem;
+  line-height: 1.05;
+}
+
+.subheading {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: inherit;
+  margin-top: 0.2rem;
+}
+
+.text-box p {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 48ch;
+}
+
+/* ---- Buttons ---- */
+.browse-btn {
+  margin-top: 1.3rem;
+  padding: 0.8rem 1.6rem;
+  background: linear-gradient(135deg, #ff7a18, #e63946);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.25s ease, background 0.25s ease;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+}
+
+.browse-btn:hover {
+  transform: scale(1.06);
+  background: linear-gradient(135deg, #e63946, #ff7a18);
+}
+
+/* ---- Slider ---- */
+.slider-container {
+  height: 100vh;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+.slide {
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  padding: 3rem 5rem;
+  box-sizing: border-box;
+}
+
+/* ---- Slide 1 (Hero) ---- */
+.hero-slide {
+  background:
+    linear-gradient(to right, rgba(0,0,0,0.55), rgba(0,0,0,0.15)),
+    url("images/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.hero-slide .hero-content {
+  width: 100%;
+  max-width: 650px;
+  margin-top: 3rem;
+}
+
+.hero-slide .text-box {
+  text-align: left;
+}
+
+/* ---- Slide 2 (About — Glassmorphism) ---- */
+.about-slide {
+  background:
+    linear-gradient(to right, rgba(0,0,0,0.45), rgba(0,0,0,0.1)),
+    url("images/slide2.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-glass {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 3rem 4rem;
+  max-width: 800px;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+
+.about-glass h2 {
+  color: #fff;
+  font-size: 2.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.about-glass p {
+  color: #f1f1f1;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.feature-box {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0.7rem 1.4rem;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+/* ---- Slide 3 (Join / CTA) ---- */
+.join-slide {
+  background:
+    linear-gradient(to right, rgba(0,0,0,0.55), rgba(0,0,0,0.2)),
+    url("images/slide3.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.join-slide h2,
+.join-slide p {
+  color: #fff;
+}
+
+/* ---- Slide 4 (Footer) ---- */
+.footer-slide {
+  background: linear-gradient(135deg, #e63946, #ff7a18);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-slide .footer {
+  background: none;
+  box-shadow: none;
+  font-size: 1.1rem;
+  color: white;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 992px) {
+  .slide { padding: 3rem; }
+  .hero-slide .hero-content { max-width: 540px; }
+}
+
+@media (max-width: 768px) {
+  .hero-content { flex-direction: column; text-align: center; align-items: center; }
+  .nav-links { display: none; }
+  .slide { align-items: center; text-align: center; padding: 2rem; }
+  .about-slide, .join-slide { padding-left: 2rem; padding-right: 2rem; }
+}
+
+/* ---- Utilities ---- */
+.text-muted { color: rgba(255,255,255,0.85); }
+.centered { display:flex; justify-content:center; align-items:center; }
