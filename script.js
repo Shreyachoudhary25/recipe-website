@@ -1,4 +1,4 @@
-// SIGNUP FUNCTION
+
 function signup() {
   const name = document.getElementById("signup-name").value;
   const email = document.getElementById("signup-email").value;
@@ -20,8 +20,6 @@ function signup() {
   window.location.href = "login.html";
 }
 
-
-// LOGIN FUNCTION
 function login() {
   const email = document.getElementById("login-email").value;
   const password = document.getElementById("login-password").value;
