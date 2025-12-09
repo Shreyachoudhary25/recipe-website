@@ -1,9 +1,3 @@
-/* =========================
-   Food Lovers — style.css
-   FINAL CLEAN VERSION
-   ========================= */
-
-/* ---- Base ---- */
 html, body, .slider-container {
   margin: 0;
   padding: 0;
@@ -16,7 +10,6 @@ body {
   color: #333;
 }
 
-/* ---- Navbar ---- */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -65,7 +58,6 @@ body {
   background-color: #d94a4a;
 }
 
-/* ---- Hero content layout (used by slides) ---- */
 .hero-content {
   display: flex;
   justify-content: space-between;
@@ -97,8 +89,6 @@ body {
   line-height: 1.6;
   max-width: 48ch;
 }
-
-/* ---- Buttons ---- */
 .browse-btn {
   margin-top: 1.3rem;
   padding: 0.8rem 1.6rem;
@@ -116,8 +106,6 @@ body {
   transform: scale(1.06);
   background: linear-gradient(135deg, #e63946, #ff7a18);
 }
-
-/* ---- Slider ---- */
 .slider-container {
   height: 100vh;
   overflow-y: auto;
@@ -136,8 +124,6 @@ body {
   padding: 3rem 5rem;
   box-sizing: border-box;
 }
-
-/* ---- Slide 1 (Hero) ---- */
 .hero-slide {
   background:
     linear-gradient(to right, rgba(0,0,0,0.55), rgba(0,0,0,0.15)),
@@ -156,8 +142,6 @@ body {
 .hero-slide .text-box {
   text-align: left;
 }
-
-/* ---- Slide 2 (About — Glassmorphism) ---- */
 .about-slide {
   background:
     linear-gradient(to right, rgba(0,0,0,0.45), rgba(0,0,0,0.1)),
@@ -213,8 +197,6 @@ body {
   transform: translateY(-6px) scale(1.05);
   box-shadow: 0 10px 30px rgba(0,0,0,0.35);
 }
-
-/* ---- Slide 3 (Join / CTA) ---- */
 .join-slide {
   background:
     linear-gradient(to right, rgba(0,0,0,0.55), rgba(0,0,0,0.2)),
@@ -228,8 +210,6 @@ body {
 .join-slide p {
   color: #fff;
 }
-
-/* ---- Slide 4 (Footer) ---- */
 .footer-slide {
   background: linear-gradient(135deg, #e63946, #ff7a18);
   display: flex;
@@ -243,8 +223,6 @@ body {
   font-size: 1.1rem;
   color: white;
 }
-
-/* ---- Responsive ---- */
 @media (max-width: 992px) {
   .slide { padding: 3rem; }
   .hero-slide .hero-content { max-width: 540px; }
@@ -256,7 +234,5 @@ body {
   .slide { align-items: center; text-align: center; padding: 2rem; }
   .about-slide, .join-slide { padding-left: 2rem; padding-right: 2rem; }
 }
-
-/* ---- Utilities ---- */
 .text-muted { color: rgba(255,255,255,0.85); }
 .centered { display:flex; justify-content:center; align-items:center; }
